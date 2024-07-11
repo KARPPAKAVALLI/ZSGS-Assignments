@@ -6,6 +6,65 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+2. Write a program to demonstrate compatible type conversions. For eg., float to int, double to float, int to short
+public class CompatibleType {
+
+    public static void main(String[] args) {
+        //float to int
+        float f1=15.24f;
+        int x=(int) f1;
+        System.out.println(x);
+
+        //double to float
+        double d=29.30;
+        float f2=(float) d;
+        System.out.println(f2);
+
+        //int to short
+        int y = 100;
+        short sh=(short) y;
+        System.out.println(sh);
+
+        //int to char
+        int z=97;
+        char ch=(char) z;
+        System.out.println(ch);
+
+        //long to char
+        long l=123;
+        ch=(char) l;
+        System.out.println(ch);
+
+        //char to int
+        char a='a';
+        int i=a;
+        System.out.println(i);
+
+        //int to long
+        int j=23;
+        long ll=j;
+        System.out.println(j);
+
+        //float to double
+        float f3=257.4F;
+        double dd=f3;
+        System.out.println(dd);
+
+        //byte to short
+        byte bb=34;
+        sh=bb;
+        System.out.println(sh);
+
+        //short to int
+        sh=125;
+        i=sh;
+        System.out.println(i);
+
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 4. Write a Java program that gets a number from the user and displays the name of the weekday. Use enum.
 import java.util.Scanner;
 

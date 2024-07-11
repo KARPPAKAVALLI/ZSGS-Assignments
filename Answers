@@ -1,0 +1,40 @@
+4. Write a Java program that gets a number from the user and displays the name of the weekday. Use enum.
+import java.util.Scanner;
+
+public class Weekday {
+    enum Days{
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY,
+        SUNDAY
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the day number");
+        int dayNum = sc.nextInt();
+        System.out.println(Days.values()[dayNum-1]);
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Write a program that calculates the average weight of 10 people.Use descriptive and meaningful variable names following Java naming conventions.Use proper data types for the variables.
+import java.util.Scanner;
+
+public class AverageWeight {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double weights[]=new double[10];
+        double averageWeight=0;
+        System.out.println("Enter the weights of 10 people");
+        for (int i = 0; i < 9; i++) {
+            weights[i]= sc.nextDouble();
+            averageWeight+=weights[i];
+        }
+        averageWeight/=10;
+        System.out.println("The Average weight of 10 people is : "+averageWeight);
+    }
+}
